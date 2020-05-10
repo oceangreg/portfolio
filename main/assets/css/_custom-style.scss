@@ -1,0 +1,139 @@
+@import 'custom-style/colors';
+@import 'custom-style/spacing';
+@import 'custom-style/shared-styles';
+@import 'custom-style/typography';
+@import 'custom-style/icons';
+@import 'custom-style/buttons';
+@import 'custom-style/forms';
+
+/* Header */
+
+h1 {
+    span {
+        color:#f4902a
+    }
+}
+
+.f-header__logo {
+    font-size: 50px;
+    font-weight: bold;
+    background: black;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    color: white;
+    position:absolute;
+    top:20px;
+}
+
+.f-header__logo:hover {
+    color:#f4902a;
+}
+
+
+.f-header__list {
+    margin-top: 0px;
+}
+
+.has-section-divider-bottom {
+    background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.text-component em {
+    font-style: italic;
+    font-weight: 700;
+}
+
+code {
+    background-color: var(--color-contrast-lower);
+    font-family: monospace;
+    padding: var(--space-xxxxs) var(--space-xxxs);
+  
+    &::selection {
+      background-color: var(--color-contrast-high);
+      color: var(--color-bg);
+    }
+  }
+  
+  
+  .code-snippet {
+    background-color: var(--color-contrast-lower);
+    border-radius: var(--radius-md);
+  
+    code {
+      background-color: transparent;
+      line-height: 1.45;
+      font-size: var(--text-sm);
+      display: block;
+      padding: var(--space-md);
+      overflow-x: auto;
+    }
+  }
+  
+.inner-content {
+    max-width: 1200px;
+    margin:auto;
+}  
+
+.portfolio-main {
+    margin-top:20px;
+}
+
+.breadcrumbs {
+    margin-top:20px;
+    max-width: 1280px;
+}
+
+.breadcrumbs {
+    ol {
+        li:last-of-type {
+            a {
+                 
+                    text-decoration: none;
+                    color:#f4995b;
+                
+            }
+        }
+    }
+}
+
+.v-timeline__item h4 {
+    color:#f4902a
+}
+
+.about-intro {
+    padding-bottom: 40px;
+}
+
+.about-img {
+    margin-bottom: 20px;
+}
+
+.groupLink {
+    color:var(--color-primary);
+    margin-top:10px;
+}
+
+.hero-intro {
+    background:#f3f3f3;
+}
+
+.story__category img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Media */
+
+@media only screen and (max-width: 900px) {
+    .f-header__logo  {
+        width: fit-content!important;
+        font-size: 25px;
+        right: -20px;
+        top: 0;
+    }
+    .feature-v4 {margin-top: 20px;}
+  }
+  
