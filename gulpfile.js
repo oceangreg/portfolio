@@ -53,7 +53,7 @@ gulp.task('scripts', function() {
   }));
 });
 
-gulp.task('browserSync', gulp.series(function () {
+gulp.task('browserSync', gulp.series(function (done) {
   browserSync.init({
     server: {
       baseDir: 'main'
@@ -68,5 +68,3 @@ gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], function () {
   gulp.watch('main/assets/css/**/*.scss', gulp.series(['sass']));
   gulp.watch(componentsJsPath, gulp.series(['scripts']));
 }));
-
-
