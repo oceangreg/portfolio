@@ -1,0 +1,3 @@
+[dev]
+   command="npm run gulp watch"
+   port=3000 # whatever port gulp/browsersync listens on
