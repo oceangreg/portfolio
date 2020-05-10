@@ -60,14 +60,13 @@ gulp.task('browserSync', gulp.series(function () {
     },
     notify: false
   })
-  
+  done();
 }));
 
 gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], function () {
   gulp.watch('main/*.html', gulp.series(reload));
   gulp.watch('main/assets/css/**/*.scss', gulp.series(['sass']));
   gulp.watch(componentsJsPath, gulp.series(['scripts']));
-  done();
 }));
 
 
