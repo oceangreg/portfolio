@@ -1,6 +1,5 @@
 # Portfolio
-My website portfolio
-Live URL: http://gregoryclayton.co.uk/
+My website portfolio: http://gregoryclayton.co.uk/
 
 # NPM
 npm install
